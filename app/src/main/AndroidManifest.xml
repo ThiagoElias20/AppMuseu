@@ -70,6 +70,10 @@
             android:exported="true" />
 
         <activity
+            android:name=".ObraDetailsActivity"
+            android:exported="true" />
+
+        <activity
             android:name=".CrudEventos"
             android:exported="true" />
 

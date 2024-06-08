@@ -1,5 +1,6 @@
 package com.example.agoravai
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -37,6 +38,14 @@ class ObraAdapter(
             tvAno.text = obra.ano
             tvAutor.text = obra.autor
             Glide.with(itemView.context).load(obra.imagem).into(imgObra)
+
+            itemView.setOnClickListener {
+                val context = itemView.context
+                val intent = Intent(context, ObraDetailsActivity::class.java).apply {
+                    putExtra("obra", obra)
+                }
+                context.startActivity(intent)
+            }
 
             btnDelete.setOnClickListener {
                 onDeleteClick(obra.id)
