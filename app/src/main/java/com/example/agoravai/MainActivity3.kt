@@ -31,7 +31,7 @@ class MainActivity3 : AppCompatActivity() {
             startActivity(intent)
         }
         evento.setOnClickListener {
-            val intent = Intent(this,CrudEventos::class.java)
+            val intent = Intent(this,CrudEventosVisitante::class.java)
             startActivity(intent)
         }
     }

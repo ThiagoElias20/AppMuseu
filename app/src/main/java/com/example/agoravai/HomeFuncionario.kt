@@ -32,7 +32,7 @@ class HomeFuncionario : AppCompatActivity() {
             startActivity(intent)
         }
         evento.setOnClickListener {
-            val intent = Intent(this,EVENTOFUNCIONARIO::class.java)
+            val intent = Intent(this,CrudEventos::class.java)
             startActivity(intent)
         }
         }

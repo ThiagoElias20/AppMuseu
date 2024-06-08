@@ -73,6 +73,18 @@
             android:name=".CrudEventos"
             android:exported="true" />
 
+        <activity
+            android:name=".CrudEventosVisitante"
+            android:exported="true" />
+
+        <activity
+            android:name=".EventAdapter"
+            android:exported="true" />
+
+        <activity
+            android:name=".EventAdapterVisitante"
+            android:exported="true" />
+
     </application>
 
 </manifest>
