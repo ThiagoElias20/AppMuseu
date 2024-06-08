@@ -89,6 +89,14 @@
             android:name=".EventAdapterVisitante"
             android:exported="true" />
 
+        <activity
+            android:name=".ObraVisitanteActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".ObraVisitanteAdapter"
+            android:exported="true" />
+
     </application>
 
 </manifest>

@@ -23,7 +23,7 @@ class MainActivity3 : AppCompatActivity() {
             startActivity(intent)
         }
         obras.setOnClickListener {
-            val intent = Intent(this,obrasVisitante::class.java)
+            val intent = Intent(this,ObraVisitanteActivity::class.java)
             startActivity(intent)
         }
         conta.setOnClickListener {
