@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "860317285766",
+    "project_id": "kotlinespacocultural",
+    "storage_bucket": "kotlinespacocultural.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:860317285766:android:c2e057c2639c53b6258007",
+        "android_client_info": {
+          "package_name": "com.example.agoravai"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "860317285766-n32ppaq2g1d48tv0s01hvh43j0e34vsi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCva9v1Q43ic7AFDu7yMTKtnuXC3uRGKiI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "860317285766-n32ppaq2g1d48tv0s01hvh43j0e34vsi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
