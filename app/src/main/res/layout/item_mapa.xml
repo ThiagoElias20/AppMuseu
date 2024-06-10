@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:padding="16dp">
+
+<ImageView
+    android:id="@+id/imgMapa"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:scaleType="centerCrop"
+    android:contentDescription="Imagem do mapa"/>
+
+<TextView
+    android:id="@+id/tvDescricaoMapa"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_toEndOf="@id/imgMapa"
+    android:layout_marginStart="16dp"
+    android:text="Descrição do mapa"
+    android:textSize="16sp"
+    android:textColor="@android:color/black"/>
+
+<ImageButton
+    android:id="@+id/btnEdit"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentEnd="true"
+    android:src="@android:drawable/ic_menu_edit"
+    android:background="?android:attr/selectableItemBackground"
+    android:contentDescription="Editar"/>
+
+<ImageButton
+    android:id="@+id/btnDelete"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/btnEdit"
+    android:layout_alignParentEnd="true"
+    android:src="@android:drawable/ic_delete"
+    android:background="?android:attr/selectableItemBackground"
+    android:contentDescription="Deletar"/>
+</RelativeLayout>

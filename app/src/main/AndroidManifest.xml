@@ -97,6 +97,12 @@
             android:name=".ObraVisitanteAdapter"
             android:exported="true" />
 
+        <activity android:name=".AddEditMapaActivity" />
+        <activity android:name=".Mapa" />
+        <activity android:name=".MapaAdapter" />
+        <activity android:name=".AddEditMapaDialogFragment" />
+        <activity android:name=".CrudMapa" />
+
     </application>
 
 </manifest>
