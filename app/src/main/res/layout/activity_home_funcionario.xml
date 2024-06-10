@@ -58,32 +58,37 @@
                 android:textSize="20sp"
                 android:layout_gravity="start" />
 
-            <ImageView
-                android:id="@+id/banner_todas_obras"
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/viewPagerObras"
                 android:layout_width="match_parent"
-                android:layout_height="158dp"
-                android:layout_marginTop="28dp"
-                android:scaleType="centerCrop"
-                android:src="@drawable/obrasmuseu" />
+                android:layout_height="250dp"
+                android:layout_marginTop="28dp" />
 
-            <TextView
-                android:id="@+id/obra_destaque"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
-                android:fontFamily="sans-serif-medium"
-                android:text="Banners do Museu."
-                android:textColor="@android:color/black"
-                android:textSize="20sp"
-                android:layout_gravity="start" />
-
-            <ImageButton
-                android:id="@+id/imageView"
+            <Button
+                android:id="@+id/crudObrasFuncionario"
                 android:layout_width="match_parent"
-                android:layout_height="179dp"
-                android:layout_marginTop="32dp"
-                android:scaleType="centerCrop"
-                app:srcCompat="@drawable/image5" />
+                android:layout_height="35dp"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:background="@android:color/darker_gray"
+                android:text="Editar Obras"
+                android:textColor="@android:color/black" />
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/viewPagerEventos"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="28dp" />
+
+            <Button
+                android:id="@+id/crudEventosFuncionario"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:background="@android:color/darker_gray"
+                android:text="Editar Eventos"
+                android:textColor="@android:color/black" />
 
             <TextView
                 android:id="@+id/textView"
@@ -143,4 +148,5 @@
     </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
 

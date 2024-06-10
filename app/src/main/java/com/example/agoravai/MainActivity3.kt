@@ -1,5 +1,6 @@
 package com.example.agoravai
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
@@ -27,6 +28,7 @@ class MainActivity3 : AppCompatActivity() {
     private var allObras: List<Obra> = emptyList()
     private var allEvents: List<Event> = emptyList()
 
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -44,6 +46,8 @@ class MainActivity3 : AppCompatActivity() {
         val home = findViewById<Button>(R.id.home)
         val obras = findViewById<Button>(R.id.obras)
         val conta = findViewById<Button>(R.id.Conta)
+        val crudObrasVisitante = findViewById<Button>(R.id.crudObrasVisitante)
+        val crudEventosVisitante = findViewById<Button>(R.id.crudEventosVisitante)
 
         home.setOnClickListener {
             val intent = Intent(this, MainActivity3::class.java)
@@ -55,6 +59,14 @@ class MainActivity3 : AppCompatActivity() {
         }
         conta.setOnClickListener {
             val intent = Intent(this, MainActivity2::class.java)
+            startActivity(intent)
+        }
+        crudObrasVisitante.setOnClickListener {
+            val intent = Intent(this, ObraVisitanteActivity::class.java)
+            startActivity(intent)
+        }
+        crudEventosVisitante.setOnClickListener {
+            val intent = Intent(this, CrudEventosVisitante::class.java)
             startActivity(intent)
         }
 
