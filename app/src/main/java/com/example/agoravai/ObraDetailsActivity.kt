@@ -1,5 +1,8 @@
 package com.example.agoravai
 
+import android.content.Intent
+import android.net.Uri
+import android.widget.Button
 import android.os.Bundle
 import android.speech.tts.TextToSpeech
 import android.widget.ImageView
@@ -22,6 +25,11 @@ class ObraDetailsActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
         val tvAutor: TextView = findViewById(R.id.tvAutor)
 
         val obra = intent.getSerializableExtra("obra") as Obra
+
+        val btnCompartilhar: Button = findViewById(R.id.btnCompartilhar)
+        btnCompartilhar.setOnClickListener {
+            compartilharObra()
+        }
 
         tvNome.text = obra.nome
         tvAno.text = obra.ano
@@ -54,6 +62,19 @@ class ObraDetailsActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
         val obra = intent.getSerializableExtra("obra") as Obra
         val textToSpeak = "Nome da obra: ${obra.nome}, Ano: ${obra.ano}, Autor: ${obra.autor}"
         tts.speak(textToSpeak, TextToSpeech.QUEUE_FLUSH, null, "")
+    }
+
+    private fun compartilharObra() {
+        val obra = intent.getSerializableExtra("obra") as Obra
+
+        val shareIntent = Intent().apply {
+            action = Intent.ACTION_SEND
+            type = "text/plain"
+            putExtra(Intent.EXTRA_SUBJECT, "Compartilhando Obra: ${obra.nome}")
+            putExtra(Intent.EXTRA_TEXT, "Nome da Obra: ${obra.nome}\nAno: ${obra.ano}\nAutor: ${obra.autor}")
+        }
+
+        startActivity(Intent.createChooser(shareIntent, "Compartilhar obra via"))
     }
 
     override fun onDestroy() {
