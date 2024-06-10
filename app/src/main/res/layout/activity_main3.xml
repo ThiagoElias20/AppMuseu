@@ -48,13 +48,14 @@
                 android:text="Conta"
                 android:textColor="@android:color/white" />
 
-            <ImageView
-                android:id="@+id/banner_todas_obras"
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/viewPagerObras"
                 android:layout_width="match_parent"
                 android:layout_height="158dp"
                 android:layout_marginTop="60dp"
-                android:scaleType="centerCrop"
-                android:src="@drawable/image__3_" />
+                android:clipToPadding="false"
+                android:paddingStart="32dp"
+                android:paddingEnd="32dp" />
 
             <TextView
                 android:id="@+id/obra_destaque"
@@ -123,3 +124,4 @@
     </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
