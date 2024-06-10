@@ -68,13 +68,15 @@
                 android:textSize="20sp"
                 android:layout_gravity="start" />
 
-            <ImageButton
-                android:id="@+id/imageView"
+            <!-- Substituir o ImageButton pelo novo ViewPager2 de eventos -->
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/viewPagerEventos"
                 android:layout_width="match_parent"
                 android:layout_height="199dp"
                 android:layout_marginTop="32dp"
-                android:scaleType="centerCrop"
-                app:srcCompat="@drawable/image5" />
+                android:clipToPadding="false"
+                android:paddingStart="32dp"
+                android:paddingEnd="32dp" />
 
             <TextView
                 android:id="@+id/textView"
@@ -124,4 +126,3 @@
     </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-

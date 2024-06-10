@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageButton
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -17,11 +18,14 @@ class MainActivity3 : AppCompatActivity() {
     private lateinit var recyclerView: RecyclerView
     private lateinit var mapaAdapter: MapaVisitanteAdapter
     private lateinit var viewPagerObras: ViewPager2
+    private lateinit var viewPagerEventos: ViewPager2
     private val db = FirebaseFirestore.getInstance()
     private var mapaListener: ListenerRegistration? = null
     private var obrasListener: ListenerRegistration? = null
+    private var eventsListener: ListenerRegistration? = null
     private var allMapas: List<Mapa> = emptyList()
     private var allObras: List<Obra> = emptyList()
+    private var allEvents: List<Event> = emptyList()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -35,11 +39,11 @@ class MainActivity3 : AppCompatActivity() {
         recyclerView.adapter = mapaAdapter
 
         viewPagerObras = findViewById(R.id.viewPagerObras)
+        viewPagerEventos = findViewById(R.id.viewPagerEventos)
 
         val home = findViewById<Button>(R.id.home)
         val obras = findViewById<Button>(R.id.obras)
         val conta = findViewById<Button>(R.id.Conta)
-        val evento = findViewById<ImageButton>(R.id.imageView)
 
         home.setOnClickListener {
             val intent = Intent(this, MainActivity3::class.java)
@@ -53,13 +57,10 @@ class MainActivity3 : AppCompatActivity() {
             val intent = Intent(this, MainActivity2::class.java)
             startActivity(intent)
         }
-        evento.setOnClickListener {
-            val intent = Intent(this, CrudEventosVisitante::class.java)
-            startActivity(intent)
-        }
 
         fetchMapas()
         fetchObras()
+        loadEventsInRealTime()
     }
 
     private fun fetchMapas() {
@@ -89,6 +90,28 @@ class MainActivity3 : AppCompatActivity() {
                 viewPagerObras.adapter = obraSliderAdapter
             }
         }
+    }
+
+    private fun loadEventsInRealTime() {
+        eventsListener = db.collection("Eventos")
+            .addSnapshotListener { snapshot, e ->
+                if (e != null) {
+                    Toast.makeText(this, "Erro ao carregar eventos", Toast.LENGTH_SHORT).show()
+                    return@addSnapshotListener
+                }
+
+                allEvents = snapshot?.map { document ->
+                    Event(
+                        document.id,
+                        document.getString("nome") ?: "",
+                        document.getString("descricao") ?: "",
+                        document.getString("imagem") ?: ""
+                    )
+                } ?: emptyList()
+
+                val eventSliderAdapter = EventSliderAdapter(allEvents)
+                viewPagerEventos.adapter = eventSliderAdapter
+            }
     }
 
     override fun onDestroy() {
