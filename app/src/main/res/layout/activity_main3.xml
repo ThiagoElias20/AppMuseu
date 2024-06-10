@@ -45,7 +45,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_gravity="end"
                 android:background="@color/black"
-                android:text="Conta"
+                android:text="@string/conta"
                 android:textColor="@android:color/white" />
 
             <androidx.viewpager2.widget.ViewPager2
@@ -64,7 +64,7 @@
                 android:layout_marginEnd="4dp"
                 android:layout_weight="1"
                 android:background="@android:color/darker_gray"
-                android:text="Ir para Obras"
+                android:text="@string/ir_para_obras"
                 android:textColor="@android:color/black" />
 
             <androidx.viewpager2.widget.ViewPager2
@@ -82,7 +82,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:fontFamily="sans-serif-medium"
-                android:text="Exposição atual do Museu"
+                android:text="@string/exposi_o_atual_do_museu"
                 android:layout_gravity="start" />
 
             <Button
@@ -92,7 +92,7 @@
                 android:layout_marginEnd="4dp"
                 android:layout_weight="1"
                 android:background="@android:color/darker_gray"
-                android:text="Ir para Eventos"
+                android:text="@string/ir_para_eventos"
                 android:textColor="@android:color/black" />
 
             <androidx.recyclerview.widget.RecyclerView
@@ -116,7 +116,7 @@
                     android:layout_marginEnd="4dp"
                     android:layout_weight="1"
                     android:background="@android:color/darker_gray"
-                    android:text="HOME"
+                    android:text="@string/home"
                     android:textColor="@android:color/black" />
 
                 <Button
@@ -124,7 +124,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="OBRAS"
+                    android:text="@string/obras"
                     android:textColor="@android:color/black"
                     android:background="@android:color/darker_gray"
                     android:layout_marginStart="4dp"/>

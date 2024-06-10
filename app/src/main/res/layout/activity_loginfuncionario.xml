@@ -20,7 +20,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="LOGIN FUNCIONARIO"
+            android:text="@string/login_funcionario"
             android:textSize="20dp" />
 
         <EditText
@@ -28,7 +28,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Email"
+            android:hint="@string/email"
             android:inputType="text" />
 
         <EditText
@@ -36,18 +36,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Senha" />
+            android:hint="@string/senha" />
 
         <Button
             android:id="@+id/entrar_Func"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Conectar" />
+            android:text="@string/conectar" />
 
         <Button
             android:id="@+id/retornar_login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Cancelar" />
+            android:text="@string/cancelar" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

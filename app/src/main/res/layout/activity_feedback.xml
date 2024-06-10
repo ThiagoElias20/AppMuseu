@@ -22,6 +22,6 @@
         android:layout_below="@id/ratingBar"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="24dp"
-        android:text="Enviar Feedback" />
+        android:text="@string/enviar_feedback" />
 
 </RelativeLayout>

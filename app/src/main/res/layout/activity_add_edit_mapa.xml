@@ -9,7 +9,7 @@
         android:id="@+id/etDescricaoMapa"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Descrição do mapa"
+        android:hint="@string/descri_o_do_mapa"
         android:layout_margin="16dp"/>
 
     <ImageView
@@ -25,7 +25,7 @@
         android:id="@+id/btnChooseImage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Escolher imagem"
+        android:text="@string/escolher_imagem"
         android:layout_below="@id/imgMapa"
         android:layout_margin="16dp"/>
 
@@ -33,7 +33,7 @@
         android:id="@+id/btnSaveMapa"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Salvar"
+        android:text="@string/salvar"
         android:layout_below="@id/btnChooseImage"
         android:layout_margin="16dp"/>
 </RelativeLayout>

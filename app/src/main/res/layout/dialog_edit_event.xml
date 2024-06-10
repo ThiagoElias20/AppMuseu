@@ -17,19 +17,19 @@
         android:id="@+id/etNome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nome do Evento" />
+        android:hint="@string/nome_do_evento3" />
 
     <EditText
         android:id="@+id/etDescricao"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Descrição do Evento" />
+        android:hint="@string/descri_o_do_evento3" />
 
     <Button
         android:id="@+id/btnSalvar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Salvar"
+        android:text="@string/salvar3"
         android:layout_marginTop="16dp"/>
 
 </LinearLayout>

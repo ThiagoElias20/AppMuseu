@@ -45,7 +45,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_gravity="end"
                 android:background="@color/black"
-                android:text="Conta"
+                android:text="@string/conta2"
                 android:textColor="@android:color/white" />
 
             <TextView
@@ -53,7 +53,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="Funcionários"
+                android:text="@string/funcion_rios"
                 android:textColor="@android:color/black"
                 android:textSize="20sp"
                 android:layout_gravity="start" />
@@ -71,7 +71,7 @@
                 android:layout_marginEnd="4dp"
                 android:layout_weight="1"
                 android:background="@android:color/darker_gray"
-                android:text="Editar Obras"
+                android:text="@string/editar_obras"
                 android:textColor="@android:color/black" />
 
             <androidx.viewpager2.widget.ViewPager2
@@ -87,7 +87,7 @@
                 android:layout_marginEnd="4dp"
                 android:layout_weight="1"
                 android:background="@android:color/darker_gray"
-                android:text="Editar Eventos"
+                android:text="@string/editar_eventos"
                 android:textColor="@android:color/black" />
 
             <TextView
@@ -96,7 +96,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:fontFamily="sans-serif-medium"
-                android:text="Exposição atual do museu"
+                android:text="@string/exposi_o_atual_do_museu2"
                 android:layout_gravity="start" />
 
             <androidx.recyclerview.widget.RecyclerView
@@ -113,7 +113,7 @@
                 android:layout_marginEnd="4dp"
                 android:layout_weight="1"
                 android:background="@android:color/darker_gray"
-                android:text="Editar Mapa"
+                android:text="@string/editar_mapa"
                 android:textColor="@android:color/black" />
 
             <LinearLayout
@@ -130,7 +130,7 @@
                     android:layout_marginEnd="4dp"
                     android:layout_weight="1"
                     android:background="@android:color/darker_gray"
-                    android:text="HOME"
+                    android:text="@string/home2"
                     android:textColor="@android:color/black" />
 
                 <Button
@@ -138,7 +138,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="OBRAS"
+                    android:text="@string/obras2"
                     android:textColor="@android:color/black"
                     android:background="@android:color/darker_gray"
                     android:layout_marginStart="4dp"/>

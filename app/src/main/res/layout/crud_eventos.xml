@@ -8,7 +8,7 @@
         android:id="@+id/etSearch"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Buscar eventos"
+        android:hint="@string/buscar_eventos"
         android:padding="16dp"
         />
 

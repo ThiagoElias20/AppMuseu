@@ -12,14 +12,14 @@
             android:id="@+id/etNome"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Nome do Evento"
+            android:hint="@string/nome_do_evento"
             android:padding="16dp" />
 
         <EditText
             android:id="@+id/etDescricao"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Descrição do Evento"
+            android:hint="@string/descri_o_do_evento"
             android:padding="16dp" />
 
         <ImageView
@@ -35,14 +35,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="Upload Imagem" />
+            android:text="@string/upload_imagem" />
 
         <Button
             android:id="@+id/btnSave"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="Salvar Evento" />
+            android:text="@string/salvar_evento" />
 
     </LinearLayout>
 </ScrollView>
