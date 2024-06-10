@@ -17,24 +17,6 @@
         android:theme="@style/Theme.Agoravai"
         tools:targetApi="31">
         <activity
-            android:name=".EVENTOUSUARIO"
-            android:exported="false" />
-        <activity
-            android:name=".EVENTOFUNCIONARIO"
-            android:exported="false" />
-        <activity
-            android:name=".adicionarObra"
-            android:exported="false" />
-        <activity
-            android:name=".edicaoObra"
-            android:exported="false" />
-        <activity
-            android:name=".obrasVisitante"
-            android:exported="false" />
-        <activity
-            android:name=".obrasEspaco"
-            android:exported="false" />
-        <activity
             android:name=".HomeFuncionario"
             android:exported="false" />
         <activity
