@@ -103,6 +103,8 @@
         <activity android:name=".AddEditMapaDialogFragment" />
         <activity android:name=".CrudMapa" />
 
+        <activity android:name=".FeedbackActivity" />
+        <activity android:name=".Feedback" />
     </application>
 
 </manifest>
